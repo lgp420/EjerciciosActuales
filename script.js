@@ -159,8 +159,130 @@ function suma(x,y) {
   console.log(result);
 
 
-//
+//Ejercicio 20
+function resta(x, y) {
+  // La función recibe dos argumentos llamados "x" e "y" que son números.
+  // Retorna el resultado de la resta de estos argumentos.
+  // Por ejemplo: 
+  // 10, 5 ---> 5
+  // 5, 5 ---> 0
+  // Tu código:
+  return x-y;
+}
+
+var resutl = 0;
+result = resta(2,5);
+console.log(result);
+
+//Ejercicio 22
+
+function multiplica(x, y) {
+  // La función recibe dos argumentos llamados "x" e "y" que son números.
+  // Retorna el resultado de la multiplicacion de estos argumentos.
+  // Por ejemplo: 
+  // 10, 5 ---> 50
+  // 5, 5 ---> 25
+  // Tu código:
+  return x*y;
+}
+
+var resutl = 0;
+result = multiplica(7,5);
+console.log(result);
+
+//Ejercicio 23
+
+function obtenerResto(x, y) {
+  // La función recibe dos argumentos llamados "x" e "y" que son números.
+  // Retorna el resultado del resto de la division de estos argumentos.
+  // Por ejemplo: 
+  // 10, 5 ---> 0
+  // 16, 5 ---> 1
+  // Tu código:
+
+  return x % y;
+}
+var resutl = 0;
+result = obtenerResto(10,9);
+console.log(result);
+
+//Ejercicio 24
+function agregarSimboloExclamacion(str) {
+  // La función recibe un argumento llamado str el cual es un string.
+  // Agrega un símbolo de exclamación al final del string str y retórnalo.
+  // Por ejemplo: 
+  // "hello world" ---> "hello world!"
+  // Tu código:
+  return console.log(str+"!");
+}
+
+var exclamacion = agregarSimboloExclamacion("Vas muy bien");
+
+//Ejercicio 25
+function combinarNombres(nombre, apellido) {
+  // La función recibe dos argumentos llamados "nombre" y "apellido" los cuales son string.
+  // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
+  // Por ejemplo: 
+  // "Soy", "Henry" ---> "Soy Henry"
+  // Tu código:
+  return console.log(nombre+ " "+ apellido);
+}
+
+var nombreCompleto = combinarNombres("Lucas","Palacios");
+
+//Ejercicio 26
+function obtenerSaludo(nombre) {
+  // La función recibe un argumento llamado nombre el cual es un string. 
+  // Toma el string "nombre" y concatena otros string en la cadena para que tome la siguiente forma:
+  // Ejemplo: "Martin" ---> "Hola Martin!"
+  // Retorna el nuevo string. 
+  // Tu código:
+
+  return "Hola " + nombre + "!";
   
+
+}
+//var saludo = obtenerSaludo("Juan");
+//console.log(saludo);
+console.log(obtenerSaludo("Pedro"));
+
+//Ejercicio 27
+function obtenerAreaRectangulo(alto, ancho) {
+  // La función recibe dos argumentos llamados "alto" y "ancho" los cuales son numeros.
+  // Retornar el área de un rectángulo teniendo su alto y ancho.
+  // Por ejemplo: 
+  // 2, 2 ---> 4
+  // 0, 2 ---> 2
+  // Tu código:
+  return alto * ancho;
+
+}
+console.log(obtenerAreaRectangulo(7,3));
+
+//Ejercicio 28
+function retornarPerimetro(lado) {
+  // La función recibe un argumento llamado lado el cual es un numero.
+  // Retornar el perimetro de un cuadrado.
+  // Por ejemplo: 
+  // 2 ---> 8
+  // 0 ---> 0
+  // Tu código:
+  return lado * 4;
+
+}
+console.log(retornarPerimetro(17));
+
+//Ejercicio 30
+function areaDelTriangulo(base, altura) {
+  // La función recibe dos argumentos llamados "base" y "altura" los cuales son numeros.
+  // Retornar el área de un triangulo teniendo su base y altura.
+  // Por ejemplo: 
+  // 10, 5 ---> 25
+  // 0, 10 ---> 0
+  // Tu código:
+  return base * altura * 0.5
+}
+  console.log(areaDelTriangulo(4,17));
  
   
   
