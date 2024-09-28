@@ -283,6 +283,30 @@ function areaDelTriangulo(base, altura) {
   return base * altura * 0.5
 }
   console.log(areaDelTriangulo(4,17));
+
+//Ejercicio 31
+function elevarAlCuadrado(num) {
+  // La función recibe un argumento llamado num el cual es un numero.
+  // Debes Retorna el valor de "num" elevado al cuadrado.
+  // Por ejemplo: 
+  // 6 ---> 36
+  // 0 ---> 0
+  // Tu código:
+  return Math.pow(num, 2);
+
+}
+console.log(elevarAlCuadrado(64));
+
+//Ejercicio 32
+function elevarAlCubo(num) {
+  // La función recibe un argumento llamado num el cual es un numero.
+  // Debes Retorna el valor de "num" elevado al cubo.
+  // Por ejemplo: 
+  // 3 ---> 27
+  // 0 ---> 0
+  // Tu código:
+
+}
  
   
   
