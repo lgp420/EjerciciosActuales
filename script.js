@@ -305,10 +305,8 @@ function elevarAlCubo(num) {
   // 3 ---> 27
   // 0 ---> 0
   // Tu código:
-  return Math.pow(num,3);
-}
 
-console.log(elevarAlCubo(8));
+}
 
 //Ejercicio 33
 function elevar(num, exponent) {
@@ -436,17 +434,168 @@ function tieneTresDigitos(num) {
   // Caso contrario, retorna false.
   // Tu código:
 
-let digitos = num.length;
+let digitos = num.toString();
+let result = digitos.length;
 
-if (digitos === 3) {
+if (result === 3) {
+  console.log(result);
   return true;
 } else {
+  console.log(result);
   return false;
 }
 
-console.log(digitos); // 3
+}
+console.log(tieneTresDigitos(1234));
+
+//Ejercicio 10
+function esDiezOCinco(num) {
+  // Retornar true si "num" es 10 o 5.
+  // De lo contrario, retornar false.
+  // Tu código:
+  if (num == 5 || num == 10){
+    return true;
+  } else{
+    return false;
+  }
+}
+console.log(esDiezOCinco(10));
+
+//Ejercicio 11
+function estaEnRango(num) {
+  // Retorna true si "num" es menor que 50 y mayor que 20.
+  // De lo contrario, retornar false.
+  // Tu código:
+  return(num<50 && num>20);
+ 
+}
+console.log(estaEnRango(10));
+
+//Ejercicio 12
+function fizzBuzz(num) {
+  // Si "num" es divisible entre 3, retorna "fizz".
+  // Si "num" es divisible entre 5, retorna "buzz".
+  // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
+  // De lo contrario, retorna false.
+  // Tu código:
+  switch (true){
+    case num % 3 == 0 && num % 5 == 0: console.log("FizzBuzz");
+    break;
+    case num % 5 == 0: console.log("Buzz");
+    break;
+    case num % 3 == 0: console.log("Fizz")
+    break;
+    default: return false;
+   
+  }
+}
+console.log(fizzBuzz(7));
+//13
+function esEntero(num) {
+  // Retorna true si "num" es un entero, ya sea positivo, negativo o cero.
+  // Ejemplo: 0.8   ---> false
+  // Ejemplo: 1     ---> true
+  // Ejemplo: (-10) ---> true
+  // De lo contrario, retorna false.
+  // Tu código:
+ 
+  return (Number.isInteger(num));
+ 
+}
+console.log(esEntero(0.4));
+//14
+function operadoresLogicos(num1, num2, num3) {
+  // La función recibe tres números distintos.
+  // Si num1 es mayor a num2 y a num3, y además es positivo, retorna ---> "Numero 1 es mayor y positivo".
+  // Si alguno de los tres números es negativo, retorna ---> "Hay negativos".
+  // Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retorna el nuevo valor.
+  // Si todos los argumentos son cero, retorna ---> "Error".
+  // Si no se cumple ninguna de las condiciones anteriores, retorna false.
+  // Tu código:
+  if(num1<0 || num2<0 || num3<0) {
+      return ("Hay negativos");    
+  } else if (num1>num2 && num1 > num3 && num1 > 0){
+    return ("Numero 1 es mayor y positivo");  
+  } else if (num3> num1 && num3>num2){
+    num3++;
+    return (num3);
+  }else if (num1 == 0 && num2 == 0 && num3 == 0){
+    return ("Error");
+  } else{
+    return false;
+  }
+ 
+}
+console.log(operadoresLogicos(2,5,3));
+
+//15
+function obtenerDiaSemana(numero) {
+  // La función recibe un "numero" entre 1 y 7 por argumento.
+  // Devuelve el día de la semana correspondiente a este número,
+  // por ejemplo, 1 para "Lunes", 2 para "Martes", etc.
+  // El día devuelto debe tener mayúscula inicial y no llevar tilde.
+  // Si el número no corresponde a un día de la semana, retorna
+  // el string "No es un dia de la semana"
+  // Tu código:
+  switch(numero){
+    case 1: console.log("Lunes");
+    break;
+    case 2: console.log("Martes");
+    break;
+    case 3: console.log("Miercoles");
+    break;
+    case 4: console.log("Jueves");
+    break;
+    case 5: console.log("Viernes");
+    break;
+    case 6: console.log("Sabado");
+    break;
+    case 7: console.log("Domingo");
+    break;
+    default: console.log("No es un dia de la semana");
+    break;
+  }
+ 
+}
+console.log(obtenerDiaSemana(7));
+
+//18
+function productoEntreNúmeros(a, b) {
+  // Dados dos argumentos "a" y "b", devuelve el producto de todos
+  // los números entre a y b (inclusive).
+  // Tu código:
+  let c = a;
+  for (var i = a+1; i <= b; i++){
+    c = c * i;
+  }
+  return c;
+}
+console.log(productoEntreNúmeros(1,3))
+
+//Ejercicio 19
+function sumarHastaN(n) {
+  // La función recibe un número "n" por argumento.
+  // Devuelve la suma de todos los números desde 1 hasta n.
+  // Tu código:
+  let suma=0;
+  for(let i = 1; i=>b; i++){
+    suma += i;
+  }
+  return suma;
+}
+console.log(sumarHastaN(3));
+//Ejercicio 20
+function sumarHastaNConBreak(n) {
+  // La función recibe un numero n por argumento.
+  // Devuelve la suma de todos los números desde 1 hasta n.
+  // Si la suma supera a 100, detén el bucle usando break.
+  // Tu código:
+  let suma = 0;
+  
+  for(let ){}
+}
+ 
   
   
 
-}
-console.log(tieneTresDigitos(123));
+
